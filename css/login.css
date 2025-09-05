@@ -1,0 +1,178 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+  background: #121317;
+  color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Wrapper */
+.wrapper {
+  background: #1e1e28;
+  border-radius: 12px;
+  padding: 40px 30px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(69, 243, 255, 0.4);
+}
+
+/* Header */
+.form.login header {
+  font-size: 28px;
+  font-weight: 700;
+  color: #45caff;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 0.15em;
+  user-select: none;
+  text-shadow: 0 0 5px #45caff88;
+}
+
+/* Each input container */
+.field {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Labels */
+.field label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #9bbbd4;
+  user-select: none;
+}
+
+/* Password field positioning */
+.field.input i {
+  position: absolute;
+  right: 15px;
+  top: 70%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #aaa;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  user-select: none;
+}
+
+.field.input i.active {
+  color: #1156a5;
+}
+
+/* Inputs */
+.field input[type="text"],
+.field input[type="email"],
+.field input[type="password"] {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: none;
+  background: #2a2d3f;
+  color: #eee;
+  font-size: 16px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  outline-offset: 3px;
+  outline-color: transparent;
+  box-shadow: inset 2px 2px 6px #232537, inset -2px -2px 6px #36394d;
+}
+
+/* Placeholder color */
+.field input::placeholder {
+  color: #6e7890;
+  font-weight: 400;
+}
+
+/* Input focus */
+.field input:focus {
+  background-color: #3e4260;
+  box-shadow:
+    0 0 8px #45caff88,
+    inset 2px 2px 8px #1e2235,
+    inset -2px -2px 8px #4a6a9b;
+  outline-color: #45caff;
+  color: #fff;
+}
+
+/* Error text */
+.error-text {
+  display: none; /* Başlangıçta gizli */
+  background-color: #ff5c5c;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  user-select: none;
+  box-shadow: 0 0 12px #ff5c5caa;
+}
+
+/* Submit button */
+.field.button input[type="submit"] {
+  width: 100%;
+  padding: 16px 0;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(90deg, #45caff, #1b92d1);
+  font-size: 18px;
+  font-weight: 700;
+  color: #121317;
+  cursor: pointer;
+  box-shadow: 0 6px 20px #45caffaa;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.field.button input[type="submit"]:hover {
+  background: linear-gradient(90deg, #1b92d1, #45caff);
+  box-shadow: 0 8px 28px #45caffcc;
+  transform: translateY(-3px);
+}
+
+/* Link group container */
+.link-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.link {
+  font-size: 14px;
+  color: #7e8ea6;
+  user-select: none;
+}
+
+.link a {
+  color: #45caff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link a:hover {
+  color: #1b92d1;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 30px 20px;
+  }
+}
