@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $mail->SMTPAutoTLS = false;
 
                 //Recipients
-                $mail->setFrom('*********', 'ChatApp'); // Gönderen e-posta ve ismi
+                $mail->setFrom('*********', '*********'); // Gönderen e-posta ve ismi
                 $mail->addAddress($to, $user['fname']);    // Alıcı e-posta ve ismi
 
                 // Content
